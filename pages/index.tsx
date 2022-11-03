@@ -37,22 +37,22 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                       <div className="space-y-2">
                         <div>
                           <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                            <Link href={`/${slug}`} className="text-gray-900 dark:text-gray-100">
+                            <Link href={`/${slug}`} className="text-3xl">
                               {h1}
                             </Link>
                           </h2>
                         </div>
-                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                        <div className="prose max-w-none text-smoke dark:text-gray-400">
                           {summary}
                         </div>
                       </div>
                       <div className="text-base font-medium leading-6">
                         <Link
                           href={`/${slug}`}
-                          className="group inline-flex h-9 items-center whitespace-nowrap rounded-full bg-slate-100 px-3 text-sm font-semibold text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500"
+                          className="group inline-flex h-9 items-center whitespace-nowrap rounded-full bg-gray-100 px-3 text-sm font-semibold text-midnight opacity-100 hover:bg-gray-200"
                           aria-label={`Read "${h1}"`}
                         >
-                          Read more &rarr;
+                          Continue reading <span className="ml-1 text-pink">&rarr;</span>
                         </Link>
                       </div>
                     </div>

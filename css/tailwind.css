@@ -7,6 +7,12 @@
     @apply md:text-lg;
   }
 
+  h1,
+  h2,
+  h3 {
+    @apply text-indigo dark:text-gray-100;
+  }
+
   h1 {
     @apply mb-6 text-center text-4xl font-bold md:text-5xl;
   }
@@ -15,6 +21,10 @@
   }
   p {
     @apply mb-4;
+  }
+  body {
+    @apply text-smoke dark:text-white;
+    font-family: 'Outfit', sans-serif;
   }
 }
 
