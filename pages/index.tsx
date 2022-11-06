@@ -10,8 +10,10 @@ const MAX_DISPLAY = 150
 
 export const getStaticProps: GetStaticProps<{ posts: PostFrontMatter[] }> = async () => {
   const posts = await getAllFilesFrontMatter('blog')
+  const filtered = posts.filter((post) => post.slug !== `about`)
+  console.log(filtered)
 
-  return { props: { posts } }
+  return { props: { posts: filtered } }
 }
 
 export default function Home({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
@@ -27,12 +29,6 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
               <li key={slug} className="py-8">
                 <article>
                   <div className="xl:items-baseline xl:space-y-0">
-                    <dl className="mb-2">
-                      <dt className="sr-only">Published on</dt>
-                      <dd className="text-sm leading-6 dark:text-slate-400 lg:right-full lg:mr-8 lg:whitespace-nowrap">
-                        <time dateTime={lastmod}>{formatDate(lastmod)}</time>
-                      </dd>
-                    </dl>
                     <div className="space-y-5">
                       <div className="space-y-2">
                         <div>
@@ -49,7 +45,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                       <div className="text-base font-medium leading-6">
                         <Link
                           href={`/${slug}`}
-                          className="group inline-flex h-9 items-center whitespace-nowrap rounded-full bg-gray-100 px-3 text-sm font-semibold text-midnight opacity-100 hover:bg-gray-200"
+                          className="group outfit-medium inline-flex h-9 items-center whitespace-nowrap rounded-full bg-gray-100 px-3 text-sm font-semibold text-midnight opacity-100 hover:bg-gray-200 "
                           aria-label={`Read "${h1}"`}
                         >
                           Continue reading <span className="ml-1 text-pink">&rarr;</span>

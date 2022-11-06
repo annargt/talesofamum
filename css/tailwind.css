@@ -1,8 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'OutfitBold';
+  src: url('/fonts/Outfit-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/Outfit-Light.ttf');
+}
+
+@font-face {
+  font-family: 'OutfitMedium';
+  src: url('/fonts/Outfit-Medium.ttf');
+}
 
 @layer base {
   html {
@@ -13,6 +26,7 @@
   h2,
   h3 {
     @apply text-indigo dark:text-gray-100;
+    font-family: 'OutfitBold';
   }
 
   h1 {
@@ -26,8 +40,12 @@
   }
   body {
     @apply text-smoke dark:text-white;
-    @apply font-Dancing;
+    font-family: 'Outfit';
   }
+}
+
+.outfit-medium {
+  font-family: 'OutfitMedium';
 }
 
 .task-list-item::before {

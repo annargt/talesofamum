@@ -19,9 +19,6 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      fontFamily: {
-        Dancing: ['Dancing Script', 'cursive'],
-      },
       spacing: {
         '9/16': '56.25%',
       },

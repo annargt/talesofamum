@@ -28,14 +28,6 @@ export default function PostLayout({ frontMatter, children, toc }: Props) {
         <div>
           <header className="mx-auto max-w-2xl">
             <div className="text-center">
-              <dl>
-                <div>
-                  <dt className="sr-only">Published on</dt>
-                  <dd className="mb-2 text-sm font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    Last updated: <time dateTime={lastmod}>{formatDate(lastmod)}</time>
-                  </dd>
-                </div>
-              </dl>
               <div>
                 <PageTitle>{h1}</PageTitle>
               </div>
@@ -45,9 +37,6 @@ export default function PostLayout({ frontMatter, children, toc }: Props) {
             <div className="xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="lg:flex">
                 <div className="prose mx-auto max-w-2xl pt-6 pb-8 dark:prose-dark">{children}</div>
-              </div>
-              <div className="mx-auto max-w-2xl">
-                <Comments frontMatter={frontMatter} />
               </div>
             </div>
           </div>
