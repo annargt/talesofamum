@@ -1,17 +1,17 @@
 const siteMetadata = {
-  title: 'Tom Ray - Learn NestJS Best Practices',
-  author: 'Tom Ray',
-  headerTitle: 'Tom Ray',
-  description: 'A blog focused on NodeJs, Typescript and other backend tools and learnings',
+  title: 'Tales of a mum - a blog on motherhood',
+  author: 'Tales of a mum',
+  headerTitle: 'Tales of a mum',
+  description: 'A blog on motherhood',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://www.tomray.dev',
-  siteRepo: 'https://github.com/tomwray13/tomray.dev',
-  siteLogo: '/static/images/profile.jpg',
-  image: '/static/images/avatar.png',
-  socialBanner: '/static/images/twitter-card.png',
-  github: 'https://github.com/tomwray13',
-  twitter: 'https://twitter.com/bytomray',
+  siteUrl: 'https://www.talesofamum.com/',
+  siteRepo: '',
+  siteLogo: '',
+  image: '',
+  socialBanner: '',
+  github: '',
+  twitter: '',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
