@@ -43,9 +43,6 @@ export default function PostLayout({ frontMatter, children, toc }: Props) {
               <dl>
                 <div>
                   <dt className="sr-only">Published on</dt>
-                  <dd className="mb-2 text-sm font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    Last updated: <time dateTime={lastmod}>{formatDate(lastmod)}</time>
-                  </dd>
                 </div>
               </dl>
               <div>
