@@ -30,7 +30,7 @@
   }
 
   h1 {
-    @apply mb-6 text-center text-4xl font-bold md:text-5xl;
+    @apply mb-6 text-4xl font-bold md:text-5xl;
   }
   h2 {
     @apply text-2xl font-semibold;

@@ -41,6 +41,12 @@ module.exports = {
         DEFAULT: {
           css: {
             color: '#676A92',
+            h2: {
+              color: '#525AC0',
+            },
+            h3: {
+              color: '#525AC0',
+            },
             a: {
               color: '#525AC0',
               '&:hover': {

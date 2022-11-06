@@ -14,7 +14,7 @@ interface Props {
 }
 
 const LayoutWrapper = ({ children }: Props) => {
-  const { pathname } = useRouter()
+  const { pathname, asPath } = useRouter()
   return (
     <SectionContainer>
       <div className={`mx-auto flex h-screen max-w-5xl flex-col justify-between`}>
@@ -32,8 +32,8 @@ const LayoutWrapper = ({ children }: Props) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className={`${pathname === link.href ? `underline` : ``} ${
-                    pathname === `/[...slug]` && link.href === `/about` ? `underline` : ``
+                  className={`${
+                    asPath === link.href ? `underline` : ``
                   } p-1 font-medium text-midnight dark:text-gray-100 sm:p-4`}
                 >
                   {link.title}
